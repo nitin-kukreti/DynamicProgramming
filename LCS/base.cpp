@@ -38,6 +38,7 @@ int memo_lcs(int ithcharS1,int ithcharS2,string s1,string s2,vector<vector<int>>
     return memo[ithcharS1][ithcharS2]=max(taken,not_taken);
 }
 
+// tabular time complexity O(n*m) space complexity O(n*m)
 int tab_lcs(string s1,string s2){
     int n=s1.size();
     int m=s2.size();
